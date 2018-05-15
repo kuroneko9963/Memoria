@@ -1,0 +1,24 @@
+<%= provide(:title, '新規登録') %>
+
+<div class="contents">
+  <h1>新規登録</h1>
+  <div class="forms">
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <%= f.label :name, 'ユーザー名' %>
+      <%= f.text_field :name %>
+
+      <%= f.label :email, 'メールアドレス' %>
+      <%= f.email_field :email %>
+
+      <%= f.label :password, 'パスワード' %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, 'パスワードの確認' %>
+      <%= f.password_field :password_confirmation %>
+
+      <%= f.submit '登録する' %>
+    <% end %>
+  </div>
+</div>

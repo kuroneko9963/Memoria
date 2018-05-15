@@ -12,5 +12,6 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select 'a[href=?]', root_path
     assert_select 'h1', 'Welcome to Memoria!'
     assert_select 'a.top-btn[href=?]', '#'
+    assert_select 'a.top-btn[href=?]', signup_path
   end
 end

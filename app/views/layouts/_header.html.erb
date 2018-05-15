@@ -1,7 +1,7 @@
 <header>
   <%= link_to 'Memoria', root_path, id: 'logo' %>
   <nav>
-    <% if request.path != root_path %>
+    <% if header_show? %>
       <ul class="navigation">
         <li class="header-menu"><%= link_to 'ログアウト', '#' %></li>
         <li class="header-menu"><%= link_to 'プロフィール', '#' %></li>
