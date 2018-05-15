@@ -1,0 +1,116 @@
+/* variable */
+$logo_color: rebeccapurple;
+$top_btn_col: dodgerblue;
+$top_btn_col_back: aliceblue;
+
+/* global */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+.contents {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* header */
+header {
+  height: 90px;
+  background-color: powderblue;
+}
+
+#logo {
+  float: left;
+  height: 70px;
+  margin: 10px 30px;
+  font-size: 3em;
+  font-family: cursive;
+  color: $logo_color;
+  text-decoration: none;
+  &:visited {
+    color: $logo_color;
+    text-decoration: inherit;
+  }
+  &:active {
+    color: $logo_color;
+    text-decoration: inherit;
+  }
+  &:hover {
+    color: $logo_color;
+    text-shadow: 2px 2px 20px;
+  }
+}
+
+.navigation {
+  display: table;
+  float: right;
+  height: 50px;
+  margin: 20px;
+}
+
+.header-menu {
+  display: table-cell;
+  text-align: center;
+  padding: 0.7em;
+  a {
+    padding: inherit;
+  }
+}
+
+/* footer */
+footer {
+  position: relative;
+  margin-top: 20px;
+  height: 90px;
+  border-top: solid 0.5px;
+  border-color: #aaa;
+  p {
+    float: right;
+    margin: 10px;
+  }
+}
+
+/* top */
+.top-btn {
+  display: block;
+  width: 300px;
+  text-align: center;
+  border: solid 2px;
+  border-color: $top_btn_col;
+  border-radius: 20px;
+  background-color: $top_btn_col_back;
+  margin: 50px auto;
+  padding: 10px 15px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: $top_btn_col;
+  &:active {
+    text-decoration: inherit;
+    color: $top_btn_col;
+  }
+  &:visited {
+    text-decoration: inherit;
+    color: $top_btn_col;
+  }
+  &:hover {
+    box-shadow: 2px 2px 8px;
+    color: $top_btn_col;
+  }
+}
+
+/* debugger */
+.debug {
+  border: solid 1px;
+  border-radius: 20px;
+  border-color: #555;
+  padding: 10px 15px;
+  background-color: #ddd;
+}
